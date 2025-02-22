@@ -8,8 +8,8 @@ const PROJECTS = [
     title: 'Portfolio Website',
     description: 'A minimal, responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion.',
     tech: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-    link: 'https://github.com/yourusername/portfolio',
-    preview: 'https://your-portfolio.com'
+    link: 'https://github.com/SSnowly/snowy_web',
+    preview: 'https://snowy-web.vercel.app/'
   },
   {
     title: 'Csalo.pro Bio site',

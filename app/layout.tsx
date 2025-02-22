@@ -32,7 +32,7 @@ export default function RootLayout({
             <div className="hidden md:block w-48">
               <Sidebar />
             </div>
-            <div className="flex-1 pl-10">
+            <div className="flex-1 pl-10 md:pl-0">
               {children}
             </div>
           </div>

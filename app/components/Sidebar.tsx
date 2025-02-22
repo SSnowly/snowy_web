@@ -13,11 +13,7 @@ export default function Sidebar() {
     const activePage = pages.find(page => page.path === pathname);
 
     return (
-        <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="w-48 h-full flex items-center"
+        <div
         >
             <div className="relative h-[400px] flex items-center">
                 <div className="absolute right-0 w-[1px] h-full bg-gradient-to-b from-transparent via-gray-700/20 to-transparent" />
@@ -35,7 +31,7 @@ export default function Sidebar() {
                     ))}
                 </ul>
             </div>
-        </motion.div>
+        </div>
     );
 }
   

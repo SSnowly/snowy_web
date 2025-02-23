@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
 import MobileNav from "./components/MobileNav";
+import Particles from "./components/Particles";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Particles count={50} />
         <div className="min-h-screen flex justify-center">
           <div className="flex w-full max-w-4xl">
             <div className="hidden md:block w-48">

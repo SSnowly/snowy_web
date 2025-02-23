@@ -38,7 +38,12 @@ const Particle = ({ x, y, size, delay }: ParticleProps) => {
   );
 };
 
-export default function Particles({ count = 30 }) {
+interface ParticlesProps {
+  count?: number;
+  key?: string;
+}
+
+export default function Particles({ count = 30, key }: ParticlesProps) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -48,7 +53,7 @@ export default function Particles({ count = 30 }) {
   if (!isMounted) return null;
 
   return (
-    <div className="absolute inset-0 overflow-hidden -z-10">
+    <div className="absolute inset-0 overflow-hidden -z-10" key={key}>
       {Array.from({ length: count }).map((_, i) => (
         <Particle
           key={i}

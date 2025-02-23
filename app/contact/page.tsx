@@ -1,6 +1,5 @@
 'use client';
 import { motion } from 'framer-motion';
-import Particles from '../components/Particles';
 import { useState } from 'react';
 
 const CONTACT_LINKS = [
@@ -41,7 +40,6 @@ export default function Contact() {
       transition={{ duration: 0.5 }}
       className="flex justify-center items-center h-full"
     >
-      <Particles count={50} />
       <div className="text-center md:text-start space-y-6 max-w-2xl relative mx-4 md:mx-0">
         {showCopied && (
           <motion.div

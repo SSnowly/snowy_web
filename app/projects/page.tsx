@@ -55,6 +55,7 @@ export default function Projects() {
     } else {
       setActiveIndex(prev => (prev - 1 + PROJECTS.length) % PROJECTS.length);
     }
+    setProgress(0);
   };
 
   const goToNext = () => {
@@ -68,11 +69,13 @@ export default function Projects() {
   const handleMouseEnter = () => {
     setIsHovered(true);
     setLastUpdateTime(Date.now());
+    document.documentElement.style.setProperty('--animation-play-state', 'paused');
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
     setLastUpdateTime(Date.now());
+    document.documentElement.style.setProperty('--animation-play-state', 'running');
   };
 
   const handleDotClick = (index: number) => {

@@ -27,8 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Particles count={50} />
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          <Particles />
         <div className="min-h-screen flex justify-center">
           <div className="flex w-full max-w-4xl">
             <div className="hidden md:block w-48">

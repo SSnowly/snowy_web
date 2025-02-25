@@ -1,5 +1,6 @@
 "use client"
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function MobileNav() {
   const pathname = usePathname();
@@ -14,7 +15,7 @@ export default function MobileNav() {
     <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white/50 dark:bg-black/50 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800">
       <div className="grid grid-cols-4 gap-1 p-1">
         {pages.map((page) => (
-          <a
+          <Link
             key={page.path}
             href={page.path}
             className={`flex flex-col items-center justify-center p-2 rounded-lg text-sm ${
@@ -24,7 +25,7 @@ export default function MobileNav() {
             }`}
           >
             {page.name}
-          </a>
+          </Link>
         ))}
       </div>
     </div>

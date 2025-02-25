@@ -4,6 +4,7 @@ import "./globals.css";
 import Sidebar from "./components/Sidebar";
 import MobileNav from "./components/MobileNav";
 import Particles from "./components/Particles";
+import PageTransition from "./components/PageTransition";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,8 +35,10 @@ export default function RootLayout({
             <div className="hidden md:block w-48">
               <Sidebar />
             </div>
-            <div className="flex-1 md:pl-10">
-              {children}
+            <div className="flex-1 md:pl-10 h-screen">
+              <PageTransition>
+                {children}
+              </PageTransition>
             </div>
           </div>
           <MobileNav />

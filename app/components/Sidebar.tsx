@@ -1,5 +1,6 @@
 "use client"
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Sidebar() {
     const pathname = usePathname();
@@ -20,13 +21,13 @@ export default function Sidebar() {
                 <ul className="space-y-2 w-full px-4">
                     {pages.map((page) => (
                         <li key={page.path}>
-                            <a
+                            <Link
                                 id={page.name}
                                 href={page.path}
                                 className={`block px-4 py-2 rounded text-end hover:text-gray-600 active:text-gray-600 ${activePage?.path === page.path ? 'text-gray-700' : 'text-gray-400'}`}
                             >
                                 {page.name}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>

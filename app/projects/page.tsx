@@ -11,13 +11,6 @@ const PROJECTS = [
     preview: 'https://snowy-web.vercel.app/'
   },
   {
-    title: 'Csalo.pro Bio site',
-    description: 'A customizable bio link platform built with Next.js, featuring a full-stack architecture for dynamic content management and user profiles.',
-    tech: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-    link: 'none',
-    preview: 'https://csalo.pro'
-  },
-  {
     title: 'FiveM Tools Website',
     description: 'A utility website for FiveM server management built with plain HTML, CSS, and JavaScript, containing various tools for server administration.',
     tech: ['HTML', 'CSS', 'JavaScript'],

@@ -12,8 +12,8 @@ const PROJECTS = [
   },
   {
     title: 'FiveM Tools Website',
-    description: 'A utility website for FiveM server management built with plain HTML, CSS, and JavaScript, containing various tools for server administration.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+    description: 'A utility website for FiveM server management built with plain Next.js, Tailwind CSS, and TypeScript, containing various tools for server administration.',
+    tech: ['Next.js', 'Tailwind CSS', 'TypeScript'],
     link: 'https://github.com/SSnowly/project7_web',
     preview: 'https://project7.store'
   },

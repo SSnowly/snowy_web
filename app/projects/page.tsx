@@ -14,7 +14,7 @@ const PROJECTS = [
     title: 'FiveM Tools Website',
     description: 'A utility website for FiveM server management built with plain HTML, CSS, and JavaScript, containing various tools for server administration.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    link: 'none',
+    link: 'https://github.com/SSnowly/project7_web',
     preview: 'https://project7.store'
   },
 ];

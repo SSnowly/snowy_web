@@ -19,8 +19,8 @@ const PROJECTS = [
   },
   {
     title: 'FiveWish',
-    description: 'A website for FiveM users to create wishlists, share and track progress.',
-    tech: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Prisma', 'Tebex API'],
+    description: 'A comprehensive website platform that allows FiveM users to create and manage personal wishlists, share them with others in the community, and track their progress towards acquiring desired items and resources.',
+    tech: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Prisma', 'Tebex API', 'Discord.js'],
     link: 'https://fivewish.org',
     preview: 'https://fivewish.org'
   }

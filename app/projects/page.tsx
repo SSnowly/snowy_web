@@ -17,6 +17,13 @@ const PROJECTS = [
     link: 'https://github.com/SSnowly/project7_web',
     preview: 'https://project7.store'
   },
+  {
+    title: 'FiveWish',
+    description: 'A website for FiveM users to create wishlists, share and track progress.',
+    tech: ['Next.js', 'Tailwind CSS', 'TypeScript', 'Prisma', 'Tebex API'],
+    link: 'https://fivewish.org',
+    preview: 'https://fivewish.org'
+  }
 ];
 
 export default function Projects() {
